@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+
+</header>
+
+<title>
+
+</title>
+
+<link href="accordion_style.css" rel="stylesheet" type="text/css" />
+
+<body>
+
+<button class="accordion">End-of-Dose wearing off Symptoms?</button>
+<div class="panel">
+  <h3> What does it mean?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <h3>How long is the study?</h3>
+  <p>Lorem ipsum..</p>
+  <h3>How to participate?</h3>
+	<p>You must be..</p>
+	<ul>
+		<li>one</li>
+		<li>two</li>
+	</ul>
+	<p>But cannot be..</p>
+	<ul>
+		<li>this</li>
+		<li>and this</li>
+	</ul>
+	<h4>To learn more about this clinical trial, contact us</h4>
+</div>
+
+<button class="accordion">Motor or Movement fluctuations?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Low Blood Pressure?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</body>
+
+</html>
